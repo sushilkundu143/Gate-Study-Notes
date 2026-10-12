@@ -13,10 +13,10 @@
 | [Q3](#q3) | GATE CS 2011 | (C) 5 |
 | [Q4](#q4) | GATE CS 2010 | (C) 1, 3 |
 | [Q5](#q5) | GATE CS 2009 | (A) I and II |
-| [Q6](#q6) | GATE CS 2009 | No listed option exactly matches; it returns suppliers with no cata… |
+| [Q6](#q6) | GATE CS 2009 | (A) official key — no option exactly correct |
 | [Q7](#q7) | GATE CS 1996 | (A) and (B) |
 | [Q8](#q8) | GFG practice | (C) Names of students who got an A in at least one course taught by… |
-| [Q9](#q9) | GFG practice | No listed option exactly matches; it returns suppliers with no cata… |
+| [Q9](#q9) | GFG practice | (A) official key — no option exactly correct |
 | [Q10](#q10) | GFG practice | (D) Only I is correct. |
 | [Q11](#q11) | GFG practice | (A) Avg |
 | [Q12](#q12) | GFG practice | (B) The average marks of male students is greater than the average … |
@@ -273,7 +273,7 @@ WHERE S.sid NOT IN (
 (C) Names of all suppliers who have supplied only blue parts.  
 (D) Names of all suppliers who have not supplied only blue parts.
 
-**Answer: No listed option exactly matches; it returns suppliers with no cataloged blue part.**
+**Answer: (A) per the official key — strictly, no option is exact: the query returns suppliers with no cataloged blue part.**
 
 **Solution:** The innermost query lists non-blue part ids. A catalog row qualifies in the middle query when its part id is *not* in that list—i.e. it is blue (assuming non-null ids and valid catalog part ids). The outer `NOT IN` excludes suppliers appearing among those blue suppliers. Thus it returns suppliers that supplied no blue part, including suppliers with no catalog rows if `sid` is non-null. Neither “supplied a non-blue part” nor the literal negation in option D states this correctly.
 
@@ -353,7 +353,7 @@ WHERE S.sid NOT IN (
 (C) Names of all suppliers who have supplied only non-blue parts.  
 (D) Names of all suppliers who have not supplied only non-blue parts.
 
-**Answer: No listed option exactly matches; it returns suppliers with no cataloged blue part.**
+**Answer: (A) per the official key — strictly, no option is exact: the query returns suppliers with no cataloged blue part.**
 
 **Solution:** The innermost query returns non-blue pids, so the middle query finds catalog entries for blue pids (those not in the non-blue list). The outer query then excludes those suppliers. It therefore selects suppliers with no blue supply, rather than the positive “has supplied a non-blue part” condition in A or the literal conditions in B–D.
 
