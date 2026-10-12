@@ -21,6 +21,7 @@ Read the files in this order. Each later topic uses ideas from the earlier ones.
 | 8 | [Transactions & Concurrency Control](./08-transactions-and-concurrency-control.md) | Transactions and concurrency control | High (2–4 marks) |
 | 9 | [Solved PYQs (topic-wise)](./09-solved-pyqs.md) | All topics | Practice |
 | 10 | [Revision & Formula Sheet](./10-revision-formula-sheet.md) | All topics | Last-week revision |
+| 11 | [Full PYQ Bank — 315 solved questions](./pyqs/README.md) | All topics | Topic-wise practice |
 
 DBMS usually carries about **7–9 marks** in GATE CSE.
 
@@ -40,6 +41,7 @@ DBMS usually carries about **7–9 marks** in GATE CSE.
 - [ ] Transactions: ACID, states, schedules, conflict & view serializability, recoverable / cascadeless / strict
 - [ ] Concurrency control: locks, 2PL variants, deadlock prevention (wait-die / wound-wait), timestamp ordering, Thomas write rule
 - [ ] Solve all PYQs in [09-solved-pyqs.md](./09-solved-pyqs.md) without looking at the solutions first
+- [ ] Work through the full [PYQ bank](./pyqs/README.md) topic by topic
 
 ## About the PYQ Bank
 

@@ -1,5 +1,7 @@
 # 9. Solved GATE PYQs — DBMS (Topic-wise)
 
+> For the complete topic-wise bank of 315 solved questions, see [pyqs/README.md](./pyqs/README.md).
+
 How to use this file:
 
 1. Cover the solution, attempt the question, then check.
@@ -204,7 +206,11 @@ Which statements are true?
 - R: All `GROUP BY` attributes must appear in `SELECT`.
 - S: Not all `GROUP BY` attributes need to appear in `SELECT`.
 
-**Answer: P and S.** Without `GROUP BY`, `HAVING` treats the whole table as one group.
+**Answer: (C) Q and R as per the official GATE key; (B) P and S as per standard SQL.**
+
+- P is actually valid standard SQL: without `GROUP BY`, `HAVING` treats the whole table as one group.
+- S is also true: `SELECT COUNT(*) FROM T GROUP BY name` is valid without selecting `name`.
+- The official key nevertheless gave (C). In the exam, follow the official key for this exact question; in practice, P and S are correct.
 
 ### D3. [GATE 2004] Interpreting a grouped query
 
